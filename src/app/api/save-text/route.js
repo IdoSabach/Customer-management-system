@@ -3,7 +3,7 @@ import path from 'path';
 
 export async function POST(req) {
   if (req.method === 'POST') {
-    const { text } = await req.json(); // קבל את המידע מהבקשה
+    const { text } = await req.json();
     const filePath = path.join(process.cwd(), 'data', 'text.txt');
 
     try {
