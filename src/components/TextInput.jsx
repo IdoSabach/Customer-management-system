@@ -46,7 +46,7 @@ export default function TextInput() {
     const exists = isTextInArray(text, lines);
 
     if (exists) {
-      setError("Text already exists.");
+      setError("User is logged in.");
       setShowError(true);
       return;
     }
